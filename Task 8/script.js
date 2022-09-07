@@ -5,8 +5,7 @@ subtraction(a, b) - priima du skaičius ir grąžina jų skirtumą.
 multiplication(a, b) - priima du skaičius ir grąžina jų daugybos rezultatą;
 division(a, b) - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
-class  Calculator {
-    constructor(sum, subtraction, multiplication, division){
+function  Calculator(sum, subtraction, multiplication, division) {
         this.sum = function sum (a, b) {
             return a + b;    
         };
@@ -19,7 +18,6 @@ class  Calculator {
         this.division = function division(a, b) {
             return a / b;
         };
-    };
 };
 
 const myCalculator = new Calculator();
