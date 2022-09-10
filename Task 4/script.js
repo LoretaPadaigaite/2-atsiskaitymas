@@ -30,5 +30,5 @@ response
       const liElement = document.createElement('li');
             liElement.textContent = `${data.model}`
             ulElement.append(liElement);
-   }
+   });
   });
