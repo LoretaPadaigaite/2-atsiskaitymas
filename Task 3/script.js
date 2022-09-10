@@ -24,13 +24,13 @@ button.addEventListener('clic', (event) =>{
 
 
 const showUsers = () => {
-    const response = fetch(`${ENDPOINT}`);
+    const response = fetch(`ENDPOINT`);
 
     response
     .then((response) => response.json())
     .then((data) => {
         const ulElement = document.createElement('ul');
-        ulElement.append(output);
+        output.append(ulElement);
         const message = document.getElementById('message').remove();
 
         data.forEach(userData => {
